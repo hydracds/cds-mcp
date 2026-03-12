@@ -1,9 +1,10 @@
 {
   "name": "@cardexscan/mcp-server",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "MCP server for Cardexscan - Cardano DEX scanner and aggregator",
   "type": "module",
   "bin": {
+    "mcp-server": "./build/index.js",
     "cardexscan-mcp-server": "./build/index.js"
   },
   "scripts": {
