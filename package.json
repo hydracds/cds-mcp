@@ -1,13 +1,13 @@
 {
   "name": "@cardexscan/mcp-server",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "MCP server for Cardexscan - Cardano DEX scanner and aggregator",
   "type": "module",
   "bin": {
-    "cds-mcp": "./build/index.js"
+    "cardexscan-mcp-server": "./build/index.js"
   },
   "scripts": {
-    "build": "tsc",
+    "build": "tsc && chmod +x build/index.js",
     "start": "node build/index.js",
     "dev": "tsc --watch",
     "prepublishOnly": "npm run build"
