@@ -8,12 +8,6 @@ MCP (Model Context Protocol) server for [Cardexscan](https://cardexscan.com) —
 npm install -g @cardexscan/mcp-server
 ```
 
-Or run directly:
-
-```bash
-npx @cardexscan/mcp-server
-```
-
 ## MCP Client Configuration
 
 ### Claude Desktop
@@ -25,7 +19,7 @@ Add to your `claude_desktop_config.json`:
   "mcpServers": {
     "cardexscan": {
       "command": "npx",
-      "args": ["-y", "@cardexscan/mcp-server"]
+      "args": ["-y", "-p", "@cardexscan/mcp-server", "cardexscan-mcp-server"]
     }
   }
 }
@@ -34,7 +28,7 @@ Add to your `claude_desktop_config.json`:
 ### Claude Code
 
 ```bash
-claude mcp add cardexscan -- npx -y @cardexscan/mcp-server
+claude mcp add cardexscan -- npx -y -p @cardexscan/mcp-server cardexscan-mcp-server
 ```
 
 ## Available Tools (24)
