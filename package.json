@@ -1,6 +1,6 @@
 {
-  "name": "cds-mcp",
-  "version": "1.0.0",
+  "name": "@cardexscan/mcp-server",
+  "version": "1.0.1",
   "description": "MCP server for Cardexscan - Cardano DEX scanner and aggregator",
   "type": "module",
   "bin": {
@@ -9,8 +9,16 @@
   "scripts": {
     "build": "tsc",
     "start": "node build/index.js",
-    "dev": "tsc --watch"
+    "dev": "tsc --watch",
+    "prepublishOnly": "npm run build"
   },
+  "keywords": ["mcp", "cardano", "dex", "cardexscan", "defi"],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hydracds/cds-mcp"
+  },
+  "author": "hydracds",
   "files": [
     "build"
   ],
